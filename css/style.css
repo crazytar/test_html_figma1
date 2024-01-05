@@ -1,6 +1,85 @@
-bodt {
-    background-color: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
 }
-h1 {
-    color: darkblue;
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    padding: 0 25px;
+}
+.story {
+    max-width: 940px;
+    margin: 0 auto;
+}
+.story h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.story h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    display: block;
+    margin: 10px auto 0;
+}
+.story_inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 25px;
+}
+.story .left {
+    max-width: 400px;
+}
+ {
+    color: #48555B;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+.story .left h3 span {
+    color: #00A4E5;
+}
+.story .right {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+.story .right .item {
+    color: white;
+
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 29px; /* 120.833% */
+    text-align: center;
+
+    width: 140px;
+    height: 224px;
+    margin-right: 20px;
+
+}
+.story .right .item:nth-child(1) {
+    background-image: url(../we_build.jpg);
+}
+
+.story .right .item:nth-child(2) {
+    background-image: url(../we_manage.jpg);
+}
+.story .right .item:nth-child(3) {
+    background-image: url(../we_plan.jpg);
+    margin-right: 0px;
 }
